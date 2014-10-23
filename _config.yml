@@ -1,6 +1,2 @@
----
-redirect_from: "/dist"
----
-
-gems:
-  - jekyll-redirect-from
+redirect_to:
+  - http://joseph-ortiz.github.io/dist/
