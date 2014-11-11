@@ -4,34 +4,35 @@
 <head>
     <title>Joseph Ortiz</title>
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body ng-controller='WelcomeCtrl'>
     <div class="wrapper">
-        <div class="inner">
-            <header class="header">
+        <div class="inner" id="fullpage">
+            <div class="header section">
                 <!--<h1  ng-view[onload=""]>Joseph Ortiz</h1>-->
                 <div bounce></div>
                 <h2>Developer + Designer</h2>
                 <!--<img class="mugshot" src="images/myface.jpg"></img>-->
-            </header>
+            </div>
             <section class="content">
                 <h2 class="title">Projects</h2>
-                <div class="project">
+                <div class="project section">
                     <img src="images/events.png"></img>
                     <b class="project-title">Where Are The Events</b>
                     <p>An API hack that takes Meetup results and combines Google Maps to place the markers. Two API's were used in this project. I used Bower, NPM, and Gulp for my build tools.</p>
                 </div>
-                <div class="project">
+                <div class="project section">
                     <img src="images/places.png"></img>
                     <b class="project-title">Places</b>
                     <p>
                         A quiz app where the answers are all countries around the world.
                     </p>
                 </div>
-                <div class="project">
+                <div class="project section">
                     <img src="images/shoppingList.png"></img>
                     <b class="project-title">Shopping List</b>
                     <p>
@@ -39,7 +40,7 @@
                     </p>
                 </div>
             </section>
-            <footer class="footer">
+            <div class="footer section">
                 <div class="contact-box">
                     <h3>About Me</h3>
                     <p>I am Joseph Ortiz and an Atlanta based Designer/Developer. I like to share all the great links I find on Twitter. I share my learnings in code via Github.</p>
@@ -48,10 +49,22 @@
                     <h3>Follow Me</h3>
                     <p>twitter</p>
                 </div>
-            </footer>
+            </div>
         </div>
     </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/bundle.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //menu: '#menu',
+                //anchors: ['firstPage', 'secondPage', '3rdPage'],
+                sectionsColor: ['', '#1BBC9B', '#7E8F7C'],
+                autoScrolling: false
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -63,6 +63,7 @@ img.mugshot {
     box-sizing: border-box;
     color: white;
     display: block;
+    padding-top: 1em;
     font-size: 13.3px;
     font-weight: bold;
     height: auto;
