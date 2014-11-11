@@ -1,8 +1,15 @@
 'use strict';
-
-var angular = require('angular'); // That's right! We can just require angular as if we were in node
-
-var WelcomeCtrl = require('./controllers/WelcomeCtrl'); // We can use our WelcomeCtrl.js as a module. Rainbows.
-
+var angular = require('angular');
 var app = angular.module('myApp', []);
-app.controller('WelcomeCtrl', ['$scope', WelcomeCtrl]);
+app.controller('WelcomeCtrl', function($scope) {
+    $scope.testVar = 'We are up and running from a required module!';
+}).directive('bounce', function() {
+    return {
+        restrict: 'A', //E = element, A = attribute, C = class, M = comment
+        replace: false,
+        template: '<h1>Joseph Ortiz</h1>',
+        link: function(scope, element) {
+                element.addClass('animated bounce');
+            } //DOM manipulation
+    };
+});
