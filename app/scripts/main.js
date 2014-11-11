@@ -9,7 +9,8 @@ app.controller('WelcomeCtrl', function($scope) {
         replace: false,
         template: '<h1>Joseph Ortiz</h1>',
         link: function(scope, element) {
-                element.addClass('animated bounce');
+                element.addClass('animated bounceInDown');
+                //element.removeClass('animated bounceInDown');
             } //DOM manipulation
     };
 });

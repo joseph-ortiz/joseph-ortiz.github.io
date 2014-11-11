@@ -1,16 +1,23 @@
 $orange: #ff9800;
 $red: #f44336;
 $yellow: #ffeb3b;
+$fontSet: 'Arimo', sans-serif;
+$white: rgb(255, 255, 255);
+$blue: #004feb;
 
 * {
     //border: 1px solid red;
+
+}
+.hide {
+    display: none;
 }
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Arimo', sans-serif;
+    font-family: $fontSet;
 
 }
 img {
@@ -75,6 +82,35 @@ img.mugshot {
         max-width: 15em;
         max-height: 15em;
         width: 100%;
+
+    }
+    .project-title {
+        box-sizing: border-box;
+        color: $white;
+        display: block;
+
+        font-size: 13.3px;
+        font-weight: bold;
+        height: auto;
+        letter-spacing: 5.1px;
+        line-height: 17.9px;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+
+    }
+    p {
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        display: block;
+        font-size: 17.3px;
+        font-weight: 300;
+        height: 101.3px;
+        line-height: 25.4px;
+        min-width: 100%;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
     }
 
 }
@@ -90,7 +126,7 @@ img.mugshot {
 }
 .contact-box {
     text-align: center;
-    border: 3px solid #004feb;
+    border: 3px solid $blue;
     width: 90%;
     //min-height: 80%;
     margin: 0 auto;
