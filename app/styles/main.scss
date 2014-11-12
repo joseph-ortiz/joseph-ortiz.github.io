@@ -164,4 +164,23 @@ img.mugshot {
     font-size: 2em;
     outline: none;
     color: white;
+
+}
+.contact {
+    text-align: center;
+    margin: 0 auto;
+    //border: 3px solid $blue;
+    text-align: center;
+    //  border: 3px solid $blue;
+    //width: 90%;
+    //min-height: 80%;
+    margin: 0 auto;
+    max-width: 1024px;
+    //margin-top: 1em;
+
+    form {
+        input[type="submit"] {
+            text-align: center;
+        }
+    }
 }
