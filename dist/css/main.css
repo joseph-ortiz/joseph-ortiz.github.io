@@ -20,7 +20,7 @@ img {
 .header {
   height: 400px;
   background-color: #ff9800;
-  min-height: 20.8125em;
+  min-height: 40em;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -97,7 +97,17 @@ img.mugshot {
 
 .contact-box {
   text-align: center;
-  border: 3px solid #004feb;
   width: 90%;
   margin: 0 auto;
   max-width: 1024px; }
+  .contact-box p {
+    line-height: 200%; }
+
+.say-hi {
+  border: 3px solid #f44336;
+  border-radius: 10px;
+  padding: 0.25em 1em;
+  background-color: transparent;
+  font-size: 2em;
+  outline: none;
+  color: white; }

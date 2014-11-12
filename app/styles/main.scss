@@ -38,7 +38,7 @@ img {
 .header {
     height: 400px;
     background-color: $orange;
-    min-height: 20.8125em;
+    min-height: 40em;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -128,10 +128,24 @@ img.mugshot {
 }
 .contact-box {
     text-align: center;
-    border: 3px solid $blue;
+    //  border: 3px solid $blue;
     width: 90%;
     //min-height: 80%;
     margin: 0 auto;
     max-width: 1024px;
     //margin-top: 1em;
+
+    p {
+        line-height: 200%;
+    }
+
+}
+.say-hi {
+    border: 3px solid $red;
+    border-radius: 10px;
+    padding: 0.25em 1em;
+    background-color: transparent;
+    font-size: 2em;
+    outline: none;
+    color: white;
 }
