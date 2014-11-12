@@ -55,7 +55,7 @@ img.mugshot {
   width: 90%; }
   .project img {
     max-width: 15em;
-    max-height: 15em;
+    max-height: 20em;
     width: 100%; }
   .project .project-title {
     -webkit-box-sizing: border-box;

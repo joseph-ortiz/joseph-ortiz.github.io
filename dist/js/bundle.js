@@ -5,9 +5,9 @@ var angular = require('angular');
 var app = angular.module('myApp', []);
 app.controller('WelcomeCtrl', function($scope) {
     $scope.testVar = 'We are up and running from a required module!';
-}).directive('bounce', function() {
+}).directive('bounceDirective', function() {
     return {
-        restrict: 'A', //E = element, A = attribute, C = class, M = comment
+        restrict: 'EAC', //E = element, A = attribute, C = class, M = comment
         replace: false,
         template: '<h1>Joseph Ortiz</h1>',
         link: function(scope, element) {
@@ -17,7 +17,7 @@ app.controller('WelcomeCtrl', function($scope) {
     };
 });
 
-}).call(this,require("Wb8Gej"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_4241b2cb.js","/")
+}).call(this,require("Wb8Gej"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_32239ef4.js","/")
 },{"Wb8Gej":7,"angular":2,"buffer":4}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 require('./lib/angular.js');

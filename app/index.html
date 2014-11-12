@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" data-ng-app="myApp">
 
 <head>
     <title>Joseph Ortiz</title>
@@ -9,30 +9,30 @@
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body ng-controller='WelcomeCtrl'>
+<body data-ng-controller='WelcomeCtrl'>
     <div class="wrapper">
         <div class="inner" id="fullpage">
             <div class="header section">
-                <div bounce></div>
+                <div class="bounceDirective"></div>
                 <h2>Developer + Designer</h2>
-                <img class="mugshot" alt="joseph ortiz" src="images/myface.jpg"></img>
+                <img class="mugshot" alt="joseph ortiz" src="images/myface.jpg" />
             </div>
             <section class="content">
                 <h2 class="title">Projects</h2>
                 <div class="project section">
-                    <img src="images/events.png" alt="events app"></img>
+                    <img src="images/events.png" alt="events app" />
                     <b class="project-title">Where Are The Events</b>
                     <p>An API hack that takes Meetup results and combines Google Maps to place the markers. Two API's were used in this project. I used Bower, NPM, and Gulp for my build tools.</p>
                 </div>
                 <div class="project section">
-                    <img src="images/places.png" alt="places app"></img>
+                    <img src="images/places.png" alt="places app" />
                     <b class="project-title">Places</b>
                     <p>
                         A quiz app where the answers are all countries around the world.
                     </p>
                 </div>
                 <div class="project section">
-                    <img src="images/shoppingList.png" alt="shopping list app"></img>
+                    <img src="images/shoppingList.png" alt="shopping list app" />
                     <b class="project-title">Shopping List</b>
                     <p>
                         A flat designed shopping list to-do app built with jquery
