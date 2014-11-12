@@ -14,5 +14,3 @@ app.controller('WelcomeCtrl', function($scope) {
             } //DOM manipulation
     };
 });
-
-document.forms["contactForm"].submit();
