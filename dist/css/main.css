@@ -54,9 +54,9 @@ img.mugshot {
   margin: 0 auto;
   width: 90%; }
   .project img {
-    max-width: 15em;
-    max-height: 20em;
-    width: 100%; }
+    max-width: 30em;
+    width: 100%;
+    padding-top: 2em; }
   .project .project-title {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

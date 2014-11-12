@@ -59,6 +59,7 @@ img {
 img.mugshot {
     max-height: 10em;
     max-width: 10em;
+
 }
 .content {
     h2 {
@@ -80,10 +81,10 @@ img.mugshot {
     //padding-bottom: 1em;
     width: 90%;
     img {
-        max-width: 15em;
-        max-height: 20em;
+        max-width: 30em;
+        //max-height: 30em;
         width: 100%;
-
+        padding-top: 2em;
     }
     .project-title {
         box-sizing: border-box;
