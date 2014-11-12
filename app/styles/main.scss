@@ -109,10 +109,12 @@ img.mugshot {
         font-weight: 300;
         height: 101.3px;
         line-height: 25.4px;
-        min-width: 100%;
+        //  min-width: 100%;
         text-align: center;
         text-decoration: none;
         width: 100%;
+        max-width: 50%;
+        margin: 0 auto;
     }
 
 }
@@ -137,6 +139,20 @@ img.mugshot {
 
     p {
         line-height: 200%;
+    }
+
+}
+.form {
+    input {
+        height: 42px;
+        padding: 8px 12px;
+        font-family: Lato,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        line-height: 1.467;
+        color: #34495e;
+        border: 2px solid #bdc3c7;
+        border-radius: 6px;
+        box-shadow: none;
     }
 
 }
