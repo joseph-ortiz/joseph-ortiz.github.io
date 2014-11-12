@@ -5,6 +5,11 @@ var angular = require('angular');
 var app = angular.module('myApp', []);
 app.controller('WelcomeCtrl', function($scope) {
     $scope.testVar = 'We are up and running from a required module!';
+}).controller("ContactCtrl", function($scope) {
+    $scope.submit = function() {
+        alert("submit function hit");
+    };
+
 }).directive('bounceDirective', function() {
     return {
         restrict: 'EAC', //E = element, A = attribute, C = class, M = comment
@@ -17,7 +22,7 @@ app.controller('WelcomeCtrl', function($scope) {
     };
 });
 
-}).call(this,require("Wb8Gej"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_ae6ca32c.js","/")
+}).call(this,require("Wb8Gej"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_cbc36d9c.js","/")
 },{"Wb8Gej":7,"angular":2,"buffer":4}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 require('./lib/angular.js');

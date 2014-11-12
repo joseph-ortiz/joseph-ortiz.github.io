@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-ng-app="myApp">
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,10 @@
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body data-ng-controller='WelcomeCtrl'>
+<body>
     <div class="wrapper">
         <div class="inner" id="fullpage">
-            <div class="header section">
+            <div class="header section" data-ng-app="myApp" data-ng-controller='WelcomeCtrl'>
                 <div class="bounceDirective"></div>
                 <img class="mugshot" alt="joseph ortiz" src="images/myface.jpg" />
                 <div class="contact-box">
@@ -51,9 +51,18 @@
                 </div>
             </section>
             <div class="footer section">
-            <!--  <iframe src="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
--->
-<form action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+
+test
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='http://joseph-ortiz.github.io/dist/thankyou.html';}"></iframe>
+<div class="ss-form">
+<form action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;">
+
+
+
 <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="ltr" class="ss-item  ss-select"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_2129810696"><div class="ss-q-title">What type of work are you interested in?
@@ -70,18 +79,20 @@
 <div class="error-message" id="1035056841_errorMessage"></div>
 <div class="required-message">This is a required question</div>
 </div></div></div>
-<input type="hidden" name="draftResponse" value="[,,&quot;6990328164577080651&quot;]
+<input type="hidden" name="draftResponse" value="[,,&quot;-8701204681072482697&quot;]
 ">
 <input type="hidden" name="pageHistory" value="0">
 
 
-<input type="hidden" name="fbzx" value="6990328164577080651">
+<input type="hidden" name="fbzx" value="-8701204681072482697">
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
-<td id="progress-container"><div id="progress-bar" class="jfk-progressBar-nonBlocking progress-bar-horizontal goog-inline-block"></div>
-<div id="progress-label" class="progress-label">100%: You made it.</div></td></tr></tbody></table></div></ol></form>
+<input type="submit" name="submit" value="Submit" />
+
+</td>
+</tr></tbody></table></div></ol></form></div>
+
+
             </div>
         </div>
     </div>

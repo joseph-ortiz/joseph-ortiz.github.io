@@ -3,6 +3,11 @@ var angular = require('angular');
 var app = angular.module('myApp', []);
 app.controller('WelcomeCtrl', function($scope) {
     $scope.testVar = 'We are up and running from a required module!';
+}).controller("ContactCtrl", function($scope) {
+    $scope.submit = function() {
+        alert("submit function hit");
+    };
+
 }).directive('bounceDirective', function() {
     return {
         restrict: 'EAC', //E = element, A = attribute, C = class, M = comment
