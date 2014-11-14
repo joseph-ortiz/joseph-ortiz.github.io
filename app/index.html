@@ -16,7 +16,7 @@
             <div class="header section" data-ng-app="myApp" data-ng-controller='WelcomeCtrl'>
                 <div class="bounceDirective"></div>
                 <img class="mugshot" alt="joseph ortiz" src="images/myface.jpg" />
-                <div class="contact-box">
+                <div class="contact-box" ng-controller="ContactCtrl">
 
 
                     <h2>Developer + Designer</h2>
@@ -24,7 +24,7 @@
                     <p>I am Joseph Ortiz and an Atlanta based Designer/Developer.
                         <br>I like to share all the great links I find on <a target="_blank" href="http://www.twitter.com/okjoeo">Twitter</a>.
                         <br>I share my learnings in code via <a target="_blank" href="http://www.github.com/joseph-ortiz">Github<a>.</p>
-                <button href="#contact"class="say-hi">Say Hi</button>
+                <button ng-click="gotoBottom()" class="say-hi">Say Hi</button>
                 <p>Or<br> <a href="mailto:joe@joseph-ortiz.me">joe@joseph-ortiz.me<a></p>
                 </div>
 
@@ -61,7 +61,7 @@
 style="display:none;" onload="if(submitted)
 {alert('thank you')}"></iframe>
 <div class="ss-form">
-<form  id="#contact" action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="post"
+<form  id="contact" action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="post"
 target="hidden_iframe" onsubmit="submitted=true;">
 
 <div class="" role="listitem">

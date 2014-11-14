@@ -200,12 +200,13 @@ img.mugshot {
     form {
 
         input[type="submit"] {
+            margin-top: 1em;
             text-align: center;
-            border: 3px solid $blue;
-            border-radius: 10px;
+            border: 2px solid $blue;
+            //border-radius: 10px;
             padding: 0.25em 1em;
             background-color: transparent;
-            font-size: 2em;
+            font-size: 1em;
             outline: none;
             color: $blue;
         }
