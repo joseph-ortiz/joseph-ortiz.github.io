@@ -7,10 +7,10 @@ $blue: #004feb;
 
 * {
     //border: 1px solid red;
-
 }
 .hide {
     display: none;
+
 }
 html,
 body {
@@ -26,8 +26,6 @@ img {
 .wrapper {
     width: 100%;
     //@media (max-width: 375px) {
-    //  width: 18em;
-
     //}
     /*set to desired width*/
     height: 100%;
@@ -132,6 +130,10 @@ img.mugshot {
     min-height: 20.25em;
     padding-top: 1em;
 
+    h4 {
+        
+    }
+
 }
 .contact-box {
     text-align: center;
@@ -144,20 +146,6 @@ img.mugshot {
 
     p {
         line-height: 200%;
-    }
-
-}
-.form {
-    input {
-        height: 42px;
-        padding: 8px 12px;
-        font-family: Lato,Helvetica,Arial,sans-serif;
-        font-size: 15px;
-        line-height: 1.467;
-        color: #34495e;
-        border: 2px solid #bdc3c7;
-        border-radius: 6px;
-        box-shadow: none;
     }
 
 }
@@ -211,4 +199,27 @@ img.mugshot {
             color: $blue;
         }
     }
+
+}
+.form {
+    input {
+        height: 42px;
+        padding: 8px 12px;
+        font-family: Lato,Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        line-height: 1.467;
+        color: #34495e;
+        border: 2px solid #bdc3c7;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+}
+.title-contact {
+    margin-top: 25%;
+    //todo:must be better way to do this.
+
+}
+.thank-you {
+    
 }

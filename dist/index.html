@@ -17,10 +17,7 @@
                 <div class="bounceDirective"></div>
                 <img class="mugshot" alt="joseph ortiz" src="images/myface.jpg" />
                 <div class="contact-box" ng-controller="ContactCtrl">
-
-
                     <h2>Developer + Designer</h2>
-
                     <p>I am Joseph Ortiz and an Atlanta based Designer/Developer.
                         <br>I like to share all the great links I find on <a target="_blank" href="http://www.twitter.com/okjoeo">Twitter</a>.
                         <br>I share my learnings in code via <a target="_blank" href="http://www.github.com/joseph-ortiz">Github<a>.</p>
@@ -55,15 +52,17 @@
             </section>
             <div class="footer contact">
 
-                <h4>Say Hi</h4>
+                <h4 class="title-contact" ng-show="success === true">Contact</h4>
+
+
                 <script type="text/javascript">
                     var submitted = false;
                 </script>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
-{alert('thank you')}"></iframe>
-                <div class="ss-form">
-                    <form id="contact" action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                <div class="ss-form" ng-controller="SubmitCtrl" ng-app="myApp">
 
+                    <h2 ng-show="success === true" ng-Class="animate" class=".thank-you">Thank You. <br> I'll get back to you shortly.</h2>
+                    <form id="contact" action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" ng-show="success === false" ng-submit="submit()">
                         <div class="" role="listitem">
                             <div dir="ltr">
                                 <div>
@@ -71,7 +70,7 @@
                                         <div class="question-one">What type of work are you interested in?</div>
                                         <div dir="ltr"></div>
                                     </label>
-                                    <select class="select-type" name="entry.2129810696" id="entry_2129810696" aria-label="What type of work are you interested in?  ">
+                                    <select class="select-type" name="entry.2129810696" id="entry_2129810696" aria-label="What type of work are you interested in?  " required>
                                         <option value=""></option>
                                         <option value="Any">Any</option>
                                         <option value="Back-End development">Back-End development</option>
@@ -89,18 +88,21 @@
                                         <div class="question-two">Comments, Question, Suggestions?</div>
                                         <div dir="ltr"></div>
                                     </label>
-                                    <textarea class="textarea-message" name="entry.983177698" rows="8" cols="0" id="entry_983177698" dir="auto" aria-label="Comments, Question, Suggestions?  "></textarea>
+                                    <textarea class="textarea-message" name="entry.983177698" rows="8" cols="0" id="entry_983177698" dir="auto" aria-label="Comments, Question, Suggestions?" required></textarea>
                                     <div id="1035056841_errorMessage"></div>
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" name="draftResponse" value="[,,&quot;-8701204681072482697&quot;]
-">
+                        <input type="hidden" name="draftResponse" value="[,,&quot;-8701204681072482697&quot;]">
                         <input type="hidden" name="pageHistory" value="0">
                         <input type="hidden" name="fbzx" value="-8701204681072482697">
+                        </ol>
+
                         <input type="submit" name="submit" value="Submit" />
                     </form>
                 </div>
+
+
             </div>
         </div>
     </div>

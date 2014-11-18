@@ -106,18 +106,6 @@ img.mugshot {
   .contact-box p {
     line-height: 200%; }
 
-.form input {
-  height: 42px;
-  padding: 8px 12px;
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.467;
-  color: #34495e;
-  border: 2px solid #bdc3c7;
-  border-radius: 6px;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
 .say-hi {
   border: 3px solid #f44336;
   border-radius: 10px;
@@ -152,3 +140,19 @@ img.mugshot {
     font-size: 1em;
     outline: none;
     color: #004feb; }
+
+.form input {
+  height: 42px;
+  padding: 8px 12px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.467;
+  color: #34495e;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.title-contact {
+  margin-top: 25%; }
+
