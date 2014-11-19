@@ -1,3 +1,6 @@
+/*------------------------------------*\
+    #Generic
+\*------------------------------------*/
 .hide {
   display: none; }
 
@@ -17,6 +20,9 @@ img {
   margin: auto;
   position: relative; }
 
+/*------------------------------------*\
+    HeaderStuff
+\*------------------------------------*/
 .header {
   height: 400px;
   background-color: #ff9800;
@@ -38,6 +44,9 @@ img.mugshot {
   max-height: 10em;
   max-width: 10em; }
 
+/*------------------------------------*\
+    Projects
+\*------------------------------------*/
 .content {
   color: black;
   width: 100%;
@@ -90,6 +99,9 @@ img.mugshot {
     max-width: 50%;
     margin: 0 auto; }
 
+/*------------------------------------*\
+    #Footer
+\*------------------------------------*/
 .footer {
   background-color: #ffeb3b;
   float: none;
@@ -141,15 +153,17 @@ img.mugshot {
     outline: none;
     color: #004feb; }
 
-.form input {
-  height: 42px;
-  padding: 8px 12px;
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.467;
-  color: #34495e;
-  border: 2px solid #bdc3c7;
-  border-radius: 6px;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+.form {
+  padding: 0.8em; }
+  .form input {
+    height: 42px;
+    padding: 8px 12px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.467;
+    color: #34495e;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 

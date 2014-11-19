@@ -5,6 +5,9 @@ $fontSet: 'Arimo', sans-serif;
 $white: rgb(255, 255, 255);
 $blue: #004feb;
 
+/*------------------------------------*\
+    #Generic
+\*------------------------------------*/
 * {
     //border: 1px solid red;
 }
@@ -33,6 +36,9 @@ img {
     position: relative;
 
 }
+/*------------------------------------*\
+    HeaderStuff
+\*------------------------------------*/
 .header {
     height: 400px;
     background-color: $orange;
@@ -59,6 +65,9 @@ img.mugshot {
     max-width: 10em;
 
 }
+/*------------------------------------*\
+    Projects
+\*------------------------------------*/
 .content {
 
     h2 {
@@ -75,9 +84,7 @@ img.mugshot {
 
 }
 .project {
-
     margin: 0 auto;
-
     width: 90%;
     img {
         max-width: 30em;
@@ -121,6 +128,9 @@ img.mugshot {
     }
 
 }
+/*------------------------------------*\
+    #Footer
+\*------------------------------------*/
 .footer {
 
     background-color: $yellow;
@@ -166,12 +176,6 @@ img.mugshot {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    //  border: 3px solid $blue;
-    //width: 90%;
-    //min-height: 80%;
-    //  max-width: 1024px;
-    //margin-top: 1em;
-    //border: 3px solid $blue;
     .question-two {
         padding-top: 1.5em;
     }
@@ -202,6 +206,7 @@ img.mugshot {
 
 }
 .form {
+    padding: 0.8em;
     input {
         height: 42px;
         padding: 8px 12px;
