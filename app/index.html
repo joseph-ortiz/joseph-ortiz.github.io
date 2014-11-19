@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" data-ng-app="myApp">
         <div class="inner" id="fullpage">
-            <div class="header section" data-ng-app="myApp" data-ng-controller='WelcomeCtrl'>
+            <div class="header section" data-ng-controller='WelcomeCtrl'>
                 <div class="bounceDirective"></div>
                 <img class="mugshot" alt="joseph ortiz" src="images/myface.jpg" />
                 <div class="contact-box" ng-controller="ContactCtrl">
@@ -59,7 +59,7 @@
                     var submitted = false;
                 </script>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-                <div class="ss-form" ng-controller="SubmitCtrl" ng-app="myApp">
+                <div class="ss-form" ng-controller="SubmitCtrl">
 
                     <h2 ng-show="success === true" ng-Class="animate" class=".thank-you">Thank You. <br> I'll get back to you shortly.</h2>
                     <form id="contact" action="https://docs.google.com/forms/d/1YNO67PR7Fsa-dRceDe6SNdFCsn0PtIWtkLX9-xAgyX0/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" ng-show="success === false" ng-submit="submit()">
