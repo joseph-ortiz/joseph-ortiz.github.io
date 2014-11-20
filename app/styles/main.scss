@@ -36,6 +36,22 @@ img {
     position: relative;
 
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("images/myface.jpg") no-repeat;
+
+}
 /*------------------------------------*\
     HeaderStuff
 \*------------------------------------*/
@@ -166,8 +182,12 @@ img.mugshot {
     background-color: transparent;
     font-size: 2em;
     outline: none;
-    color: white;
+    color: black;
+    cursor: pointer;
 
+}
+.say-hi:hover {
+    color: white;
 }
 .contact {
     text-align: center;
