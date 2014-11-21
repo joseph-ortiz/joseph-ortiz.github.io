@@ -172,7 +172,8 @@ a:hover {
     background-color: transparent;
     font-size: 1em;
     outline: none;
-    color: #004feb; }
+    color: #004feb;
+    cursor: pointer; }
 
 .form {
   padding: 0.8em; }
@@ -188,9 +189,9 @@ a:hover {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-a {
+a.underline {
   position: relative;
-  color: black;
+  color: white;
   text-decoration: none; }
 
 a.underline:hover {

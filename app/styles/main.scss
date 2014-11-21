@@ -222,6 +222,7 @@ a:hover {
             font-size: 1em;
             outline: none;
             color: $blue;
+            cursor: pointer;
         }
     }
 
@@ -249,9 +250,9 @@ a:hover {
     
 
 }
-a {
+a.underline {
     position: relative;
-    color: black;
+    color: white;
     text-decoration: none;
 
 }
