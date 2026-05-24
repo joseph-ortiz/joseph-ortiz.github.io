@@ -30,7 +30,10 @@ const PROJECTS = [
       "Architecturally: clients are the brain, MCP is the hands, database is durable session.",
     ],
     pipe: ["sources", "ingest.py", "embed", "pgvector", "mcp.server", "client"],
-    influences: "Nate Jones’ OB1 pattern · Anthropic’s Managed Agents architecture",
+    influences: [
+      { label: "Nate Jones’ OB1 pattern", url: "https://github.com/NateBJones-Projects/OB1" },
+      { label: "Anthropic’s Managed Agents architecture", url: "https://www.anthropic.com/engineering/managed-agents" },
+    ],
     repo: "github.com/joseph-ortiz/automatic-chainsaw",
   },
   {
@@ -58,7 +61,11 @@ const PROJECTS = [
       "Real work, not demos — measured on incidents closed and CRs shipped, not pretty traces.",
     ],
     pipe: ["triage", "itsm-investigate", "change-request", "cr-deploy", "verify"],
-    influences: "Anthropic Skills · Claude Code · the ‘small team with good tooling’ thesis",
+    influences: [
+      { label: "Anthropic Skills" },
+      { label: "Claude Code" },
+      { label: "the ‘small team with good tooling’ thesis" },
+    ],
   },
   {
     id: "flowaudit",
@@ -85,7 +92,10 @@ const PROJECTS = [
       "Trust loop: tickets attribute back to scoreboard rows, so the team trusts the source.",
     ],
     pipe: ["heat-check", "drill (FlowInterview.Error)", "cluster", "JSM ticket", "Confluence"],
-    influences: "Salesforce observability folklore · the ‘invisible debt’ frame from SRE",
+    influences: [
+      { label: "Salesforce observability folklore" },
+      { label: "the ‘invisible debt’ frame from SRE" },
+    ],
   },
 ];
 
@@ -244,7 +254,16 @@ function Drawer({ projectId, onClose, onNav }) {
 
               <div className="drawer-section">
                 <h4>Influences</h4>
-                <p>{p.influences}</p>
+                <p>
+                  {p.influences.map((inf, i) => (
+                    <span key={i}>
+                      {i > 0 && " · "}
+                      {inf.url
+                        ? <a href={inf.url} target="_blank" rel="noopener noreferrer" style={{color:"var(--text)", textDecoration:"underline", textUnderlineOffset:"3px"}}>{inf.label}</a>
+                        : inf.label}
+                    </span>
+                  ))}
+                </p>
               </div>
 
               {p.repo && (
