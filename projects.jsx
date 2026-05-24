@@ -93,7 +93,7 @@ const PROJECTS = [
     ],
     pipe: ["heat-check", "drill (FlowInterview.Error)", "cluster", "JSM ticket", "Confluence"],
     influences: [
-      { label: "Salesforce observability folklore" },
+      { label: "Salesforce observability folklore — stuff engineers know from experience but no one formally documents (always check FlowInterview.Error, not just the user-facing error; Setup Audit Trail is the only source of truth for who touched what)" },
       { label: "the ‘invisible debt’ frame from SRE" },
     ],
   },
