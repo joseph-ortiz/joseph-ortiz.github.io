@@ -8,11 +8,11 @@ const PROJECTS = [
     id: "chainsaw",
     index: "01",
     title: "automatic-chainsaw",
-    tag: "AI Harness",
+    tag: "Personal Life Harness",
     year: "2026",
-    deck: "A shared “Open Brain” context layer my wife and I both use — one Supabase + pgvector database, accessible to any MCP-compatible AI client.",
+    deck: "Harness engineering applied to personal life — a shared context layer my wife and I both use, accessible to any MCP-compatible AI client.",
     summary:
-      "One Supabase + pgvector database, accessible to any MCP-compatible AI client (Claude Desktop, Claude Code, ChatGPT, Cursor). Every thought is tagged by owner, so we can scope to ‘mine’ or ‘ours’ without crossing wires.",
+      "The same patterns I use to make Claude effective at work, turned on my own life. One Supabase + pgvector database, accessible to any MCP-compatible AI client (Claude Desktop, Claude Code, ChatGPT, Cursor). Every thought is tagged by owner, so we can scope to ‘mine’ or ‘ours’ without crossing wires.",
     stack: ["Supabase", "pgvector", "MCP", "Python", "Claude"],
     stats: [
       { k: "ingest sources", v: "4" },
@@ -20,8 +20,9 @@ const PROJECTS = [
       { k: "scope", v: "personal · shared" },
     ],
     problem:
-      "Every AI client wants its own context — Claude Desktop has Projects, ChatGPT has Memory, Cursor has its own RAG. Switching between them means re-explaining who I am, what I’m working on, and what my wife and I are planning together. That cost compounds.",
+      "Every AI client wants its own context — Claude Desktop has Projects, ChatGPT has Memory, Cursor has its own RAG. Switching between them means re-explaining who I am, what I’m working on, and what my wife and I are planning together. That cost compounds. I wanted the same kind of harness I’d build at work, but for personal life.",
     approach: [
+      "Treat it as harness engineering, not a chatbot — durable session, explicit tools, scoped memory.",
       "Single source of truth: Supabase Postgres with pgvector for semantic recall.",
       "Owner-scoped chunks — every record tagged mine / hers / ours, queries scope cleanly.",
       "Python ingest workers pull from Gmail, Calendar, Drive, GitHub on a schedule.",
