@@ -62,8 +62,8 @@ const PROJECTS = [
     ],
     pipe: ["triage", "itsm-investigate", "change-request", "cr-deploy", "verify"],
     influences: [
-      { label: "Anthropic Skills — the model of narrow, composable agents with their own prompts, tools, and verification steps; beats one mega-prompt every time" },
-      { label: "Claude Code — the harness that makes it real: hooks, MCP servers, slash commands, durable memory across sessions" },
+      { label: "Anthropic Skills — the model of narrow, composable agents with their own prompts, tools, and verification steps; beats one mega-prompt every time", url: "https://www.anthropic.com/news/skills" },
+      { label: "Claude Code — the harness that makes it real: hooks, MCP servers, slash commands, durable memory across sessions", url: "https://www.anthropic.com/claude-code" },
       { label: "the ‘small team with good tooling’ thesis — a generalist with leverage outpaces a specialist without; tooling compounds across tasks" },
     ],
   },
