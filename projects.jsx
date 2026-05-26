@@ -5,40 +5,8 @@ const { useState, useEffect, useCallback } = React;
 
 const PROJECTS = [
   {
-    id: "chainsaw",
-    index: "01",
-    title: "automatic-chainsaw",
-    tag: "Personal Life Harness",
-    year: "2026",
-    deck: "Harness engineering applied to personal life — a shared context layer my wife and I both use, accessible to any MCP-compatible AI client.",
-    summary:
-      "The same patterns I use to make Claude effective at work, turned on my own life. One Supabase + pgvector database, accessible to any MCP-compatible AI client (Claude Desktop, Claude Code, ChatGPT, Cursor). Every thought is tagged by owner, so we can scope to ‘mine’ or ‘ours’ without crossing wires.",
-    stack: ["Supabase", "pgvector", "MCP", "Python", "Claude"],
-    stats: [
-      { k: "ingest sources", v: "4" },
-      { k: "clients", v: "any MCP" },
-      { k: "scope", v: "personal · shared" },
-    ],
-    problem:
-      "Every AI client wants its own context — Claude Desktop has Projects, ChatGPT has Memory, Cursor has its own RAG. Switching between them means re-explaining who I am, what I’m working on, and what my wife and I are planning together. That cost compounds. I wanted the same kind of harness I’d build at work, but for personal life.",
-    approach: [
-      "Treat it as harness engineering, not a chatbot — durable session, explicit tools, scoped memory.",
-      "Single source of truth: Supabase Postgres with pgvector for semantic recall.",
-      "Owner-scoped chunks — every record tagged mine / hers / ours, queries scope cleanly.",
-      "Python ingest workers pull from Gmail, Calendar, Drive, GitHub on a schedule.",
-      "MCP server exposes search/append/scope tools — any compliant client plugs in.",
-      "Architecturally: clients are the brain, MCP is the hands, database is durable session.",
-    ],
-    pipe: ["sources", "ingest.py", "embed", "pgvector", "mcp.server", "client"],
-    influences: [
-      { label: "Nate Jones’ OB1 pattern", url: "https://github.com/NateBJones-Projects/OB1" },
-      { label: "Anthropic’s Managed Agents architecture", url: "https://www.anthropic.com/engineering/managed-agents" },
-    ],
-    repo: "github.com/joseph-ortiz/automatic-chainsaw",
-  },
-  {
     id: "skills",
-    index: "02",
+    index: "01",
     title: "AI Skill Library for Salesforce",
     tag: "Skill Library",
     year: "2025–26",
@@ -69,7 +37,7 @@ const PROJECTS = [
   },
   {
     id: "flowaudit",
-    index: "03",
+    index: "02",
     title: "Flow Audit Scoreboard",
     tag: "Salesforce · Observability",
     year: "2025",
@@ -96,6 +64,38 @@ const PROJECTS = [
       { label: "Salesforce observability folklore — stuff engineers know from experience but no one formally documents (always check FlowInterview.Error, not just the user-facing error; Setup Audit Trail is the only source of truth for who touched what)" },
       { label: "the ‘invisible debt’ frame from SRE" },
     ],
+  },
+  {
+    id: "chainsaw",
+    index: "03",
+    title: "automatic-chainsaw",
+    tag: "Personal Life Harness",
+    year: "2026",
+    deck: "Harness engineering applied to personal life — a shared context layer my wife and I both use, accessible to any MCP-compatible AI client.",
+    summary:
+      "The same patterns I use to make Claude effective at work, turned on my own life. One Supabase + pgvector database, accessible to any MCP-compatible AI client (Claude Desktop, Claude Code, ChatGPT, Cursor). Every thought is tagged by owner, so we can scope to ‘mine’ or ‘ours’ without crossing wires.",
+    stack: ["Supabase", "pgvector", "MCP", "Python", "Claude"],
+    stats: [
+      { k: "ingest sources", v: "4" },
+      { k: "clients", v: "any MCP" },
+      { k: "scope", v: "personal · shared" },
+    ],
+    problem:
+      "Every AI client wants its own context — Claude Desktop has Projects, ChatGPT has Memory, Cursor has its own RAG. Switching between them means re-explaining who I am, what I’m working on, and what my wife and I are planning together. That cost compounds. I wanted the same kind of harness I’d build at work, but for personal life.",
+    approach: [
+      "Treat it as harness engineering, not a chatbot — durable session, explicit tools, scoped memory.",
+      "Single source of truth: Supabase Postgres with pgvector for semantic recall.",
+      "Owner-scoped chunks — every record tagged mine / hers / ours, queries scope cleanly.",
+      "Python ingest workers pull from Gmail, Calendar, Drive, GitHub on a schedule.",
+      "MCP server exposes search/append/scope tools — any compliant client plugs in.",
+      "Architecturally: clients are the brain, MCP is the hands, database is durable session.",
+    ],
+    pipe: ["sources", "ingest.py", "embed", "pgvector", "mcp.server", "client"],
+    influences: [
+      { label: "Nate Jones’ OB1 pattern", url: "https://github.com/NateBJones-Projects/OB1" },
+      { label: "Anthropic’s Managed Agents architecture", url: "https://www.anthropic.com/engineering/managed-agents" },
+    ],
+    repo: "github.com/joseph-ortiz/automatic-chainsaw",
   },
 ];
 
